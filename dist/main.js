@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const batsman_1 = require("./batsman");
+const scorer_1 = require("./scorer");
+const scorer = new scorer_1.Scorer();
+const batsman1 = new batsman_1.Batsman('K L Rahul');
+const batsman2 = new batsman_1.Batsman('Rohit Sharma');
+scorer.addBatsman(batsman1);
+scorer.addBatsman(batsman2);
+scorer.calculateScore([1, 2, 0, 0, 4, 1, 6, 2, 1, 3]);
+scorer.printScore();
